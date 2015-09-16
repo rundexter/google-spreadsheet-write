@@ -12,8 +12,8 @@ module.exports = {
      * @param {AppData} dexter Container for all data used in this workflow.
      */
     run: function(step, dexter) {
-        var spreadsheetId = step.input('spreadsheet').first()
-            , worksheetId = parseInt(step.input('worksheet').first() || 1, 10)
+        var spreadsheetId = dexter.environment('google_spreadsheet')
+            , worksheetId = 1 //parseInt(step.input('worksheet').first() || 1, 10)
             , startRow = step.input('start_row', 2).first()
             , startCol = step.input('start_col', 1).first()
             , col1 = step.input('col1_data').toArray()
@@ -21,8 +21,8 @@ module.exports = {
             , col3 = step.input('col3_data').toArray()
             , col4 = step.input('col4_data').toArray()
             , col5 = step.input('col5_data').toArray()
-            , email = step.input('email', dexter.environment('google_app_client_email')).first()
-            , privateKey = step.input('private_key', dexter.environment('google_app_client_private_key')).first()
+            , email = dexter.environment('google_app_client_email')
+            , privateKey = dexter.environment('google_app_client_private_key')
             , data = []
             , self = this
             , spreadsheet

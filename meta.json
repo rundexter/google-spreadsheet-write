@@ -1,16 +1,6 @@
 {
     "inputs": [
         {
-            "id": "spreadsheet",
-            "title":"Spreadsheet key",
-            "type":"string",
-            "selector_type": "user"
-        }, {
-            "id": "worksheet",
-            "title":"Worksheet index",
-            "type":"integer",
-            "selector_type": "user"
-        }, {
             "id": "col1_data",
             "title":"1st column",
             "type":"string",
@@ -43,16 +33,6 @@
             "id": "start_col",
             "title":"Column to start at",
             "type":"integer"
-        }, {
-            "id": "email",
-            "title": "OAuth email",
-            "type": "string",
-            "selector_type": "user"
-        }, {
-            "id": "private_key",
-            "title": "OAuth private key",
-            "type": "string",
-            "selector_type": "user"
         }
     ],
     "outputs": [

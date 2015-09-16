@@ -11,8 +11,6 @@ library under the hood.
 
 Parameter|Required|Multiple?|Details
 ---------|--------|---------|-------
-spreadsheet | Yes | No | The ID of the spreadsheet you're writing to
-worksheet | No | No | The index of the target worksheet (defaults to 1)
 start_row | No | No | Which row to start reading from (defaults to 2: assumes there's a header in 1)
 start_col | No | No | Which column index to start at, (defaults to 1)
 email | No | No | Your Service Account's email.  If not set, it will try to use the matching environment variable as a default.
@@ -64,8 +62,9 @@ Writing to row 1 column 1 will result in:
 
 Parameter|Required?|Details
 ---------|---------|-------
-google_app_client_email | No | Your Service Account's email - will be used if input.email is not present.
-google_app_client_private_key | No | Your Service Account's private key (the key itself, NOT the filename!) - will be used if input.private_key is not present.
+google_spreadsheet | Yes | The ID of the spreadsheet you're writing to
+google_app_client_email | Yes | Your Service Account's email
+google_app_client_private_key | Yes | Your Service Account's private key (the key itself, NOT the filename!)
 
 
 ### Getting the spreadsheet key
