@@ -22,8 +22,21 @@ module.exports = _.merge({
         , "description": "A fixture workflow used to test a module"
     }
     , steps: {
+        dummy_prev: {
+            id: 'dummy_prev',
+            next: [{
+                id: 'local_test_step',
+                input_map: {
+                    col1_data: 'Fake, but something\'s here',
+                    col2_data: null,
+                    col3_data: 'Also fake',
+                    col4_data: ''
+                }
+            }]
+        },
         local_test_step: {
             id: 'local_test_step'
+            , prev: 'dummy_prev'
             , type: 'module'
             //The test runner will change YOUR_MODULE_NAME to the correct module name
             , name: 'YOUR_MODULE_NAME'
@@ -37,33 +50,14 @@ module.exports = _.merge({
      * End defaults
      */
     , environment: {
-       /*
-        * Any API keys you might need should go in the env.js.
-        * For example:
-        *
-        "parse_app_id": "abc123"
-        , "parse_app_key": "foobar"
-        */
     }
     , user: {
-        /*
-         * Your dexter user settings should go in the env.js file and remain uncommitted.  
-         * For example:
-         *
-        profile: {
-            id: 1,
-            api_key: 'apikeytest'
-        }
-         */
     }
     , data: {
         local_test_step: {
-            /*
-             * You should update this section with some test input for testing your module
-             */
             input: {
-                //Replace VAR1 with the name of an expected input, and add more inputs as needed.
-                VAR1: 'foo'
+                col1_data: [ 'foo', 'hello', 'george' ],
+                col3_data: [ 'bar', 'world' ]
             }
         }
     }

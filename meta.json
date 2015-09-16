@@ -1,28 +1,61 @@
-/*
- * Metadata describing the module operation
- */
 {
-    //Required. Inputs the module expects.
     "inputs": [
-        //e.g.
-        /*
         {
-            "id": "from",
-            "title":"From",
-            "type":"string"
+            "id": "spreadsheet",
+            "title":"Spreadsheet key",
+            "type":"string",
+            "selector_type": "user"
+        }, {
+            "id": "worksheet",
+            "title":"Worksheet index",
+            "type":"integer",
+            "selector_type": "user"
+        }, {
+            "id": "col1_data",
+            "title":"1st column",
+            "type":"string",
+            "selector_type": "user"
+        }, {
+            "id": "col2_data",
+            "title":"2nd column",
+            "type":"string",
+            "selector_type": "user"
+        }, {
+            "id": "col3_data",
+            "title":"3rd column",
+            "type":"string",
+            "selector_type": "user"
+        }, {
+            "id": "col4_data",
+            "title":"4th column",
+            "type":"string",
+            "selector_type": "user"
+        }, {
+            "id": "col5_data",
+            "title":"5th column",
+            "type":"string",
+            "selector_type": "user"
+        }, {
+            "id": "start_row",
+            "title":"Row to start at",
+            "type":"integer"
+        }, {
+            "id": "start_col",
+            "title":"Column to start at",
+            "type":"integer"
+        }, {
+            "id": "email",
+            "title": "OAuth email",
+            "type": "string",
+            "selector_type": "user"
+        }, {
+            "id": "private_key",
+            "title": "OAuth private key",
+            "type": "string",
+            "selector_type": "user"
         }
-        */
     ],
-    //Required. Outputs the module emits.
     "outputs": [
-      //e.g.
-      /*
-        {
-            "id": "from",
-            "title":"From",
-            "type":"array"
-        }
-      */
     ],
-    "title": "google-spreadsheet-write" /* Required.A display name for the module */
+    "title": "google-spreadsheet-write"
 }
