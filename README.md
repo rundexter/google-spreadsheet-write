@@ -1,4 +1,4 @@
-# Google Spreadsheet Reader 
+# Google Spreadsheet Writer 
 
 This [Dexter](http://rundexter.com) module allows you to write 1-5 
 columns from your App into a Google Apps Spreadsheet.  It uses the 
