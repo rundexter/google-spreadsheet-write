@@ -200,6 +200,9 @@ module.exports = {
             var empty = true;
             firstEmpty = parseInt(idx, 10) + 1;
             _.each(row, function(col) {
+                if(_.isString(col)) {
+                    col = col.replace(/\w\t\n\r/g, '');
+                }
                 if(Boolean(col)) {
                     empty = false;
                     return false;
