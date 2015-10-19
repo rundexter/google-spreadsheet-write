@@ -3,36 +3,36 @@
         {
             "id": "col1_data",
             "title":"1st column",
-            "type":"string",
-            "selector_type": "user"
+            "selector_type": "user",
+            "description": "Data that will show up in output col1"
         }, {
             "id": "col2_data",
             "title":"2nd column",
-            "type":"string",
-            "selector_type": "user"
+            "selector_type": "user",
+            "description": "Data that will show up in output col2"
         }, {
             "id": "col3_data",
             "title":"3rd column",
-            "type":"string",
-            "selector_type": "user"
+            "selector_type": "user",
+            "description": "Data that will show up in output col3"
         }, {
             "id": "col4_data",
             "title":"4th column",
-            "type":"string",
-            "selector_type": "user"
+            "selector_type": "user",
+            "description": "Data that will show up in output col4"
         }, {
             "id": "col5_data",
             "title":"5th column",
-            "type":"string",
-            "selector_type": "user"
+            "selector_type": "user",
+            "description": "Data that will show up in output col5"
         }, {
             "id": "start_row",
-            "title":"Row to start at",
-            "type":"integer"
+            "title":"Start row",
+            "description": "Which row to start writing data (null, the default, will append data)"
         }, {
             "id": "start_col",
-            "title":"Column to start at",
-            "type":"integer"
+            "title":"Start col",
+            "description": "Which column to start writing data (defaults to 1)"
         }
     ],
     "outputs": [
