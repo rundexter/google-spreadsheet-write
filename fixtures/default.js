@@ -27,10 +27,12 @@ module.exports = _.merge({
             next: [{
                 id: 'local_test_step',
                 input_map: {
-                    col1_data: 'Fake, but something\'s here',
+                    //Some data here is necessary to fool the data assembler...real values, however, aren't (see implementation for details)
+                    //These values will NOT work in a real app
+                    col1_data: 'dexter.step(...).input(foo)',
                     col2_data: null,
-                    col3_data: 'Also fake',
-                    col4_data: ''
+                    col3_data: 'dexter.step(...).input(bar)',
+                    col4_data: null
                 }
             }]
         },
@@ -56,8 +58,9 @@ module.exports = _.merge({
     , data: {
         local_test_step: {
             input: {
-                col1_data: [ 'foo', 'hello', 'george' ],
-                col3_data: [ 'bar', 'world' ]
+                col1_data: [ 'foobar', 'hello', 'george' ],
+                col3_data: [ 'bar', 'world' ],
+                start_col: 5 
             }
         }
     }
