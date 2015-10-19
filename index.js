@@ -94,7 +94,7 @@ module.exports = {
 
                 if(!startRow) {
                     startRow = self.getFirstEmptyRow(rows);
-                    self.log('No explicit start row given: found first empty row at', startRow);
+                    self.log('No explicit start row given: found first empty row at ' + startRow);
                 }
                 endRow = startRow + data.length;
                 self.log(util.format('Sheet has %d row(s) and %d column(s).  Writing %d items starting at row %d, column %d, and ending at row %d column %d.'
