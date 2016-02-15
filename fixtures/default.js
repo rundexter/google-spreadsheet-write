@@ -1,6 +1,6 @@
-var _ = require('lodash')
-    , env = require('./env')
-    ;
+var _   = require('lodash')
+  , env = require('./env')
+;
 
 module.exports = _.merge({
     /*
@@ -60,7 +60,9 @@ module.exports = _.merge({
             input: {
                 col1_data: [ 'foobar', 'hello', 'george' ],
                 col3_data: [ 'bar', 'world' ],
-                start_col: 5 
+                start_col: 5 ,
+                email: 'daniel@rundexter.com',
+                spreadsheet_id: '117M1ade8ZbpigiKgve25SM7WCm5Q_taHuggQDSCfC18'
             }
         }
     }

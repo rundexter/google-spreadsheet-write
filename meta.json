@@ -1,42 +1,52 @@
 {
-    "inputs": [
-        {
-            "id": "col1_data",
-            "title":"1st column",
-            "selector_type": "user",
-            "description": "Data that will show up in output col1"
-        }, {
-            "id": "col2_data",
-            "title":"2nd column",
-            "selector_type": "user",
-            "description": "Data that will show up in output col2"
-        }, {
-            "id": "col3_data",
-            "title":"3rd column",
-            "selector_type": "user",
-            "description": "Data that will show up in output col3"
-        }, {
-            "id": "col4_data",
-            "title":"4th column",
-            "selector_type": "user",
-            "description": "Data that will show up in output col4"
-        }, {
-            "id": "col5_data",
-            "title":"5th column",
-            "selector_type": "user",
-            "description": "Data that will show up in output col5"
-        }, {
-            "id": "start_row",
-            "title":"Start row",
-            "description": "Which row to start writing data (null, the default, will append data)"
-        }, {
-            "id": "start_col",
-            "title":"Start col",
-            "description": "Which column to start writing data (defaults to 1)"
-        }
-    ],
+    "inputs": [{
+        "id": "email",
+        "title": "Email"
+    }, {
+        "id": "spreadsheet_id",
+        "title": "Spreadsheet ID"
+    }, {
+        "id": "col1_data",
+        "title":"1st column",
+        "selector_type": "user",
+        "description": "Data that will show up in output col1"
+    }, {
+        "id": "col2_data",
+        "title":"2nd column",
+        "selector_type": "user",
+        "description": "Data that will show up in output col2"
+    }, {
+        "id": "col3_data",
+        "title":"3rd column",
+        "selector_type": "user",
+        "description": "Data that will show up in output col3"
+    }, {
+        "id": "col4_data",
+        "title":"4th column",
+        "selector_type": "user",
+        "description": "Data that will show up in output col4"
+    }, {
+        "id": "col5_data",
+        "title":"5th column",
+        "selector_type": "user",
+        "description": "Data that will show up in output col5"
+    }, {
+        "id": "start_row",
+        "title":"Start row",
+        "description": "Which row to start writing data (null, the default, will append data)"
+    }, {
+        "id": "start_col",
+        "title":"Start col",
+        "description": "Which column to start writing data (defaults to 1)"
+    }],
     "outputs": [
     ],
     "icon": "table",
-    "title": "Google Spreadsheet Writer"
+    "title": "Google Spreadsheet Writer",
+    "providers": [{
+        "name": "google",
+        "scopes": [
+            "https://spreadsheets.google.com/feeds/"
+        ]
+    }]
 }
