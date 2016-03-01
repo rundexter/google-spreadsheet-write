@@ -1,8 +1,5 @@
 {
     "inputs": [{
-        "id": "email",
-        "title": "Email"
-    }, {
         "id": "spreadsheet_id",
         "title": "Spreadsheet ID"
     }, {

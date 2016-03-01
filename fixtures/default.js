@@ -58,11 +58,11 @@ module.exports = _.merge({
     , data: {
         local_test_step: {
             input: {
-                col1_data: [ 'foobar', 'hello', 'george' ],
-                col3_data: [ 'bar', 'world' ],
-                start_col: 5 ,
-                email: 'daniel@rundexter.com',
-                spreadsheet_id: '117M1ade8ZbpigiKgve25SM7WCm5Q_taHuggQDSCfC18'
+                col1_data      : [ 'foobar', 'hello', 'george' ],
+                col3_data      : [ 'bar', 'world' ],
+                start_col      : 1,
+                email          : 'daniel@rundexter.com',
+                spreadsheet_id : "1XedAjqHYzObCWfa-UWhd8yDD6wf-p1Rbe862uAWGyiw"
             }
         }
     }

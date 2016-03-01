@@ -67,12 +67,11 @@ module.exports = {
 
         //Set up our API configuration
         options = {
-            //debug: true,
+            debug: true,
             spreadsheetId: spreadsheetId,
             worksheetId: worksheetId,
             accessToken: {
                 type: 'Bearer',
-                email: email,
                 token: dexter.provider('google').credentials('access_token')
             }
         };

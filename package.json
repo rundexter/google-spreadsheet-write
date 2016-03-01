@@ -1,7 +1,7 @@
 {
   "name": "google-spreadsheet-write",
   "version": "0.0.2",
-  "description": "",
+  "description": "Writes values to a spreadsheet, allowing specific mapping for up to five columns",
   "main": "index.js",
   "author": "Run Dexter, Inc.",
   "license": "MIT",
@@ -10,5 +10,9 @@
     "edit-google-spreadsheet": "^0.2.19",
     "lodash": "^3.9.3",
     "q": "^1.4.1"
+  },
+  "repository": {
+    "type":"git",
+    "url": "https://github.com/rundexter/google-spreadsheet-write"
   }
 }
