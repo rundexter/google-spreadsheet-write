@@ -1,6 +1,6 @@
 {
   "name": "google-spreadsheet-write",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Writes values to a spreadsheet, allowing specific mapping for up to five columns",
   "main": "index.js",
   "author": "Run Dexter, Inc.",

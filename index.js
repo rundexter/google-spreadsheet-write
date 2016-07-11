@@ -14,7 +14,7 @@ module.exports = {
      */
     run: function(step, dexter) {
         var spreadsheetId = step.input('spreadsheet_id').first()
-          , worksheetId   = 1 //parseInt(step.input('worksheet').first() || 1, 10)
+          , worksheetId   = parseInt(step.input('worksheet').first() || 1, 10)
           , startRow      = step.input('start_row').first()
           , startCol      = step.input('start_col', 1).first()
           , col1          = step.input('col1_data').toArray()

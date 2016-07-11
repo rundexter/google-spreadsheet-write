@@ -1,7 +1,12 @@
 {
     "inputs": [{
         "id": "spreadsheet_id",
-        "title": "Spreadsheet ID"
+        "title": "Spreadsheet ID",
+        "description": "The ID of the spreadsheet (found in the URL)."
+    }, {
+        "id": "worksheet",
+        "title": "Worksheet #",
+        "description": "1-indexed number indicating which worksheet to use. Defaults to 1"
     }, {
         "id": "col1_data",
         "title":"1st column",
